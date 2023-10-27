@@ -31,8 +31,6 @@
 #    define RGB_MATRIX_LED_COUNT 68
 #    define RGB_MATRIX_SPLIT { 34, 34 }
 #    define RGB_MATRIX_MAXIMUM_BRIGHTNESS RGBLIGHT_LIMIT_VAL
-#    define RGB_MATRIX_LED_COUNT RGBLED_NUM
-#    define RGB_MATRIX_SPLIT RGBLED_SPLIT
 #    define SPLIT_TRANSPORT_MIRROR
 #    define ENABLE_RGB_MATRIX_ALPHAS_MODS
 #    define ENABLE_RGB_MATRIX_GRADIENT_UP_DOWN
@@ -93,4 +91,3 @@
 // When using the default resolution of 4, if you notice your encoder skipping
 // every other tick, lower the resolution to 2.
 #define ENCODER_RESOLUTION 2
-#define RGBLIGHT_SLEEP
