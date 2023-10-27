@@ -289,18 +289,34 @@ bool encoder_update_kb(uint8_t index, bool clockwise) {
     // 0 is left-half encoder,
     // 1 is right-half encoder
     if (index == 0) {
-        // Volume control
+        // Volume control on default layer, change tracks on layer 1
         if (clockwise) {
-            tap_code(KC_VOLU);
+            if(layer_state_is(_LOWER)){
+                tap_code(KC_MFFD);
+            } else {
+                tap_code(KC_VOLU);
+            }
         } else {
-            tap_code(KC_VOLD);
+            if(layer_state_is(_LOWER)){
+                tap_code(KC_MRWD);
+            } else {
+                tap_code(KC_VOLD);
+            }
         }
     } else if (index == 1) {
-        // Page up/Page down
+        // Scroll on default layer, move through tabs on layer 1.
         if (clockwise) {
-            tap_code(KC_PGDN);
+            if(layer_state_is(_LOWER)){
+                tap_code16(C(KC_TAB));
+            } else {
+                tap_code(KC_WH_U);
+            }
         } else {
-            tap_code(KC_PGUP);
+            if(layer_state_is(_LOWER)){
+                tap_code16(S(C(KC_TAB)));
+            } else {
+                tap_code(KC_WH_D);
+            }
         }
     }
     return true;
