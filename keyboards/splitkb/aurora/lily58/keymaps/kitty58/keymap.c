@@ -1,5 +1,21 @@
 #include QMK_KEYBOARD_H
 
+// current crappy workflow:
+// 1. load lily58/keymaps/kitty58/keymap.json in the qmk configurator
+// 2. modify whatever is needed
+// 3. download the newly generated json file in lily58/keymaps/kitty58.json - this is just for reference(not really needed for the functionality of the whole thing)
+// 4. add the changes from kitty58.json to lily58/keymaps/kitty58/keymap.json
+// 5. compile
+//
+// NOTE: it seems like when keymap.c and keymap.json are present in a keymap directory, the json file takes precedence
+// NOTE: no need to keep in sync both keymap.c and keymap.json
+// NOTE: (unrelated) to see current qmk config run `qmk config` - it should list all aliases for kb and km. Current working config:
+/* find.keymap=default */
+/* mass_compile.keymap=default */
+/* user.keyboard=splitkb/aurora/lily58/rev1 */
+/* user.keymap=kitty58 */
+
+
 // Left-hand home row mods
 #define ALT_A LALT_T(KC_A)
 #define GUI_S LGUI_T(KC_S)
