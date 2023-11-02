@@ -214,14 +214,19 @@ void render_layer_state(void) {
         0x20, 0xbd, 0xbe, 0xbf, 0x20,
         0x20, 0xdd, 0xde, 0xdf, 0x20, 0};
 
-    if(layer_state_is(_LOWER)) {
+    switch (get_highest_layer(layer_state)) {
+    case _LOWER:
         oled_write_P(lower_layer, false);
-    } else if(layer_state_is(_RAISE)) {
+        break;
+    case _RAISE:
         oled_write_P(raise_layer, false);
-    } else if(layer_state_is(_DEFAULT)) {
-        oled_write_P(default_layer, false);
-    } else {
+        break;
+    case _ADJUST:
         oled_write_P(adjust_layer, false);
+        break;
+    default: //  for any other layers, or the default layer
+        oled_write_P(default_layer, false);
+        break;
     }
 }
 
