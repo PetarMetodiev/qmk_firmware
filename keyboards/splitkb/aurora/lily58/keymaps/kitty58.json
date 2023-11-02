@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "notes": "",
+  "notes": "My awesome keymap",
   "documentation": "\"This file is a QMK Configurator export. You can import this at <https://config.qmk.fm>. It can also be used directly with QMK's source code.\n\nTo setup your QMK environment check out the tutorial: <https://docs.qmk.fm/#/newbs>\n\nYou can convert this file to a keymap.c using this command: `qmk json2c {keymap}`\n\nYou can compile this keymap using this command: `qmk compile {keymap}`\"\n",
   "keyboard": "splitkb/aurora/lily58/rev1",
   "keymap": "kitty58",
@@ -150,7 +150,7 @@
       "KC_8",
       "KC_9",
       "KC_0",
-      "KC_TRNS",
+      "KC_PEQL",
       "KC_F1",
       "KC_F2",
       "KC_F3",
@@ -161,8 +161,8 @@
       "KC_4",
       "KC_5",
       "KC_6",
-      "KC_TRNS",
-      "KC_TRNS",
+      "KC_PSLS",
+      "KC_PMNS",
       "KC_F7",
       "KC_F8",
       "KC_F9",
@@ -171,12 +171,12 @@
       "KC_F12",
       "KC_TRNS",
       "KC_TRNS",
-      "KC_TRNS",
+      "KC_PDOT",
       "KC_1",
       "KC_2",
       "KC_3",
-      "KC_TRNS",
-      "KC_TRNS",
+      "KC_PAST",
+      "KC_PPLS",
       "KC_TRNS",
       "KC_TRNS",
       "KC_TRNS",
@@ -247,5 +247,5 @@
       "KC_TRNS"
     ]
   ],
-  "author": ""
+  "author": "Anonymous"
 }
