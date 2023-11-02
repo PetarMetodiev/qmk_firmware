@@ -193,6 +193,7 @@ void render_kb_LED_state(void) {
     oled_write_P(led_usb_state.num_lock ? PSTR("N ") : PSTR("  "), false);
     oled_write_P(led_usb_state.caps_lock ? PSTR("C ") : PSTR("  "), false);
     oled_write_P(led_usb_state.scroll_lock ? PSTR("S ") : PSTR("  "), false);
+    oled_write_P(is_caps_word_on() ? PSTR("CW") : PSTR("  "), false);
 }
 
 void render_layer_state(void) {
