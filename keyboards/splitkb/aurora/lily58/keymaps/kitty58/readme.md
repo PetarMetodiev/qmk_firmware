@@ -34,7 +34,7 @@ user.keymap=kitty58
 ```
 
 Generated from https://keymap-drawer.streamlit.app/
-![lily58](https://github.com/PetarMetodiev/qmk_firmware/assets/6378306/f0ec2cdb-f1b9-46c6-b968-b109287921af)
+![lily58](https://github.com/PetarMetodiev/qmk_firmware/assets/6378306/afa1a89b-f688-4ad7-83f8-04de8e396454)
 
 _**Note:** At the time of writing (the 24th of October 2022), not every feature used in the default keymap is supported by the QMK Configurator. You cannot yet upload the default `keymap.json` due to a file format mismatch - use the "Load Default" button to load the default keymap instead. Additionally, custom configuration options are still being worked on: if your keymap depends on them, please compile your firmware offline for now._
 
