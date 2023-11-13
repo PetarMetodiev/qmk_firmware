@@ -300,12 +300,16 @@ bool encoder_update_kb(uint8_t index, bool clockwise) {
         if (clockwise) {
             if(layer_state_is(_LOWER)){
                 tap_code(KC_MFFD);
+            } else if (layer_state_is(_RAISE)){
+                tap_code16(A(KC_RIGHT));
             } else {
                 tap_code(KC_VOLU);
             }
         } else {
             if(layer_state_is(_LOWER)){
                 tap_code(KC_MRWD);
+            } else if (layer_state_is(_RAISE)){
+                tap_code16(A(KC_LEFT));
             } else {
                 tap_code(KC_VOLD);
             }
@@ -315,12 +319,16 @@ bool encoder_update_kb(uint8_t index, bool clockwise) {
         if (clockwise) {
             if(layer_state_is(_LOWER)){
                 tap_code16(C(KC_TAB));
+            } else if (layer_state_is(_RAISE)){
+                tap_code16(C(KC_RIGHT));
             } else {
                 tap_code(KC_WH_U);
             }
         } else {
             if(layer_state_is(_LOWER)){
                 tap_code16(S(C(KC_TAB)));
+            } else if (layer_state_is(_RAISE)){
+                tap_code16(C(KC_LEFT));
             } else {
                 tap_code(KC_WH_D);
             }
