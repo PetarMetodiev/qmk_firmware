@@ -296,21 +296,26 @@ bool encoder_update_kb(uint8_t index, bool clockwise) {
     // 0 is left-half encoder,
     // 1 is right-half encoder
     if (index == 0) {
-        // Volume control on default layer, change tracks on layer 1
         if (clockwise) {
             if(layer_state_is(_LOWER)){
+                // Go to next tract on LOWER layer
                 tap_code(KC_MFFD);
             } else if (layer_state_is(_RAISE)){
+                // Move between words on RAISE layer, alt + left arrow
                 tap_code16(A(KC_RIGHT));
             } else {
+                // Volume control on default layer
                 tap_code(KC_VOLU);
             }
         } else {
             if(layer_state_is(_LOWER)){
+                // Go to prev tract on LOWER layer
                 tap_code(KC_MRWD);
             } else if (layer_state_is(_RAISE)){
+                // Move between words on RAISE layer, alt + right arrow
                 tap_code16(A(KC_LEFT));
             } else {
+                // Volume control on default layer
                 tap_code(KC_VOLD);
             }
         }
@@ -318,18 +323,24 @@ bool encoder_update_kb(uint8_t index, bool clockwise) {
         // Scroll on default layer, move through tabs on layer 1.
         if (clockwise) {
             if(layer_state_is(_LOWER)){
+                // Cycle between application tabs
                 tap_code16(C(KC_TAB));
             } else if (layer_state_is(_RAISE)){
-                tap_code16(C(KC_RIGHT));
+                // This is used in hammerspoon to cycle between screens
+                SEND_STRING(SS_TAP(X_F17) SS_DELAY(10) SS_DOWN(X_LCTL) SS_TAP(X_LEFT) SS_UP(X_LCTL));
             } else {
+                // Scroll on default layer
                 tap_code(KC_WH_U);
             }
         } else {
             if(layer_state_is(_LOWER)){
+                // Cycle between application tabs
                 tap_code16(S(C(KC_TAB)));
             } else if (layer_state_is(_RAISE)){
-                tap_code16(C(KC_LEFT));
+                // This is used in hammerspoon to cycle between screens
+                SEND_STRING(SS_TAP(X_F17) SS_DELAY(10) SS_DOWN(X_LCTL) SS_TAP(X_RIGHT) SS_UP(X_LCTL));
             } else {
+                // Scroll on default layer
                 tap_code(KC_WH_D);
             }
         }
