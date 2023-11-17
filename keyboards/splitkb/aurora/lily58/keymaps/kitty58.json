@@ -162,7 +162,7 @@
       "KC_5",
       "KC_6",
       "KC_PSLS",
-      "KC_PMNS",
+      "LT(3,KC_PMNS)",
       "KC_F7",
       "KC_F8",
       "KC_F9",
@@ -182,9 +182,9 @@
       "KC_TRNS",
       "KC_TRNS",
       "KC_TRNS",
-      "KC_TRNS",
-      "KC_TRNS",
-      "KC_TRNS"
+      "KC_0",
+      "KC_0",
+      "KC_0"
     ],
     [
       "KC_NO",
