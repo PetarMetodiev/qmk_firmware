@@ -93,7 +93,7 @@
 #define ENCODER_RESOLUTION 2
 
 // For dual function keys
-#define TAPPING_TERM 180
+#define TAPPING_TERM 170
 
 #define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
 #define PERMISSIVE_HOLD
