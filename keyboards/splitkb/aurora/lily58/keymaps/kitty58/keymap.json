@@ -5,19 +5,10 @@
     "keyboard": "splitkb/aurora/lily58/rev1",
     "keymap": "kitty58",
     "layout": "LAYOUT",
-    "macros": [[
-        {
-            "action": "tap",
-            "keycodes": ["LCTL", "SPC"]
-        },
-        {
-            "action": "tap",
-            "keycodes": ["LGUI", "KC_LEFT"]
-        },
-        {
-            "action": "tap",
-            "keycodes": ["LGUI", "KC_RGHT"]
-        }]
+    "macros": [
+        [{"action": "tap", "keycodes": ["LCTL", "SPC"]}],
+        [{"action": "tap", "keycodes": ["LGUI", "LEFT"]}],
+        [{"action": "tap", "keycodes": ["LGUI", "RGHT"]}]
     ],
     "layers": [
         [
