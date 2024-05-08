@@ -6,9 +6,9 @@
     "keymap": "kitty58",
     "layout": "LAYOUT",
     "macros": [
-        [{"action": "tap", "keycodes": ["LCTL", "SPC"]}],
-        [{"action": "tap", "keycodes": ["LGUI", "LEFT"]}],
-        [{"action": "tap", "keycodes": ["LGUI", "RGHT"]}]
+        [{ "action": "tap", "keycodes": ["LCTL", "SPC"] }],
+        [{ "action": "tap", "keycodes": ["LGUI", "LEFT"] }],
+        [{ "action": "tap", "keycodes": ["LGUI", "RGHT"] }]
     ],
     "layers": [
         [
@@ -110,9 +110,9 @@
             "QK_MACRO_2",
             "KC_TRNS",
             "KC_TRNS",
-            "KC_TRNS",
-            "KC_TRNS",
-            "KC_TRNS",
+            "KC_CUT",
+            "KC_COPY",
+            "KC_PSTE",
             "KC_TRNS",
             "KC_TRNS",
             "KC_TRNS",
