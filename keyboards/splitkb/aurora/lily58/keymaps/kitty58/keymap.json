@@ -8,7 +8,10 @@
     "macros": [
         [{ "action": "tap", "keycodes": ["LCTL", "SPC"] }],
         [{ "action": "tap", "keycodes": ["LGUI", "LEFT"] }],
-        [{ "action": "tap", "keycodes": ["LGUI", "RGHT"] }]
+        [{ "action": "tap", "keycodes": ["LGUI", "RGHT"] }],
+        [{ "action": "tap", "keycodes": ["LGUI", "X"] }],
+        [{ "action": "tap", "keycodes": ["LGUI", "C"] }],
+        [{ "action": "tap", "keycodes": ["LGUI", "V"] }]
     ],
     "layers": [
         [
@@ -110,9 +113,9 @@
             "QK_MACRO_2",
             "KC_TRNS",
             "KC_TRNS",
-            "KC_CUT",
-            "KC_COPY",
-            "KC_PSTE",
+            "QK_MACRO_3",
+            "QK_MACRO_4",
+            "QK_MACRO_5",
             "KC_TRNS",
             "KC_TRNS",
             "KC_TRNS",
