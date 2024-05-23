@@ -92,5 +92,9 @@
 // For dual function keys
 #define TAPPING_TERM 170
 
+// Caps Word
 #define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
+#define CAPS_WORD_INVERT_ON_SHIFT
+#define CAPS_WORD_IDLE_TIMEOUT 3000
+
 #define PERMISSIVE_HOLD
